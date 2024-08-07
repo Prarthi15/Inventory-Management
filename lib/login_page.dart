@@ -217,7 +217,9 @@ class _LoginFormState extends State<LoginForm> {
                     ],
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/forgotPassword');
+                    },
                     child: const Text(
                       "Forgot Password?",
                       style: TextStyle(color: Color.fromRGBO(6, 90, 216, 1)),
@@ -244,7 +246,9 @@ class _LoginFormState extends State<LoginForm> {
                     ],
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/forgotPassword');
+                    },
                     child: const Text(
                       "Forgot Password?",
                       style: TextStyle(color: Color.fromRGBO(6, 90, 216, 1)),

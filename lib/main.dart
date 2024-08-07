@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/forgot_password.dart';
 import 'login_page.dart';
 import 'create_account.dart';
 
@@ -15,12 +16,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Inventory Management',
       theme: ThemeData(
-        primarySwatch: Colors.green,
-        primaryColor: const Color.fromRGBO(37, 128, 69, 1),
+        primarySwatch: Colors.blue,
+        primaryColor: const Color.fromRGBO(6, 90, 216, 1),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             foregroundColor: Colors.white,
-            backgroundColor: const Color.fromRGBO(6, 90, 216, 255),
+            backgroundColor: const Color.fromRGBO(6, 90, 216, 1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8.0),
             ),
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginPage(),
         '/createAccount': (context) => const CreateAccountPage(),
+        '/forgotPassword': (context) => const ForgotPasswordPage()
       },
     );
   }

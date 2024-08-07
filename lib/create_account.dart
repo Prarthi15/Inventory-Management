@@ -17,11 +17,10 @@ class CreateAccountPage extends StatelessWidget {
                   child: Stack(
                     children: [
                       Container(
-                        color: const Color.fromRGBO(
-                            6, 90, 216, 1), // Updated color
+                        color: const Color.fromRGBO(6, 90, 216, 1),
                         child: Center(
                           child: Padding(
-                            padding: const EdgeInsets.all(40.0),
+                            padding: const EdgeInsets.all(30.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,8 +48,8 @@ class CreateAccountPage extends StatelessWidget {
                                     Navigator.pop(context);
                                   },
                                   style: ElevatedButton.styleFrom(
-                                    foregroundColor: const Color.fromRGBO(
-                                        6, 90, 216, 1), // Updated color
+                                    foregroundColor:
+                                        const Color.fromRGBO(6, 90, 216, 1),
                                     backgroundColor: Colors.white,
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 20.0, horizontal: 20.0),
@@ -100,8 +99,7 @@ class CreateAccountPage extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         height: 300,
-                        color: const Color.fromRGBO(
-                            6, 90, 216, 1), // Updated color
+                        color: const Color.fromRGBO(6, 90, 216, 1),
                         child: Center(
                           child: Padding(
                             padding: const EdgeInsets.all(40.0),
@@ -132,8 +130,8 @@ class CreateAccountPage extends StatelessWidget {
                                     Navigator.pop(context);
                                   },
                                   style: ElevatedButton.styleFrom(
-                                    foregroundColor: const Color.fromRGBO(
-                                        6, 90, 216, 1), // Updated color
+                                    foregroundColor:
+                                        const Color.fromRGBO(6, 90, 216, 1),
                                     backgroundColor: Colors.white,
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 20.0, horizontal: 20.0),
@@ -190,7 +188,7 @@ class CreateAccountFormState extends State<CreateAccountForm> {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(80.0),
+        padding: const EdgeInsets.all(50.0),
         child: Form(
           key: _formKey,
           child: Column(
@@ -202,7 +200,7 @@ class CreateAccountFormState extends State<CreateAccountForm> {
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromRGBO(6, 90, 216, 1), // Updated color
+                  color: Color.fromRGBO(6, 90, 216, 1),
                 ),
               ),
               const SizedBox(height: 20),
@@ -305,9 +303,7 @@ class CreateAccountFormState extends State<CreateAccountForm> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    if (_formKey.currentState!.validate()) {
-                      // Process registration
-                    }
+                    if (_formKey.currentState!.validate()) {}
                   },
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
